@@ -539,7 +539,7 @@ msgstr "パスワード"
 
 #: cred/models.py:82
 msgid "Markdown Description"
-msgstr "説明(Markdown)"
+msgstr "説明に Markdown を使用する"
 
 #: cred/models.py:84 staff/templates/staff_changeadvice.html:21
 #: staff/templates/staff_groupdetail.html:10
@@ -575,11 +575,11 @@ msgstr "変更しました"
 
 #: cred/models.py:213
 msgid "Only Metadata Changed"
-msgstr "メタ情報のみを更新しました"
+msgstr "メタ情報を更新しました"
 
 #: cred/models.py:214
 msgid "Only Details Viewed"
-msgstr "詳細情報のみを閲覧しました"
+msgstr "詳細情報を閲覧しました"
 
 #: cred/models.py:215
 msgid "Exported"
@@ -669,11 +669,11 @@ msgstr ""
 
 #: cred/templates/cred_detail.html:22
 msgid "Hey there!"
-msgstr ""
+msgstr "(注意) "
 
 #: cred/templates/cred_detail.html:22
 msgid "This credential is an historical version."
-msgstr "この資格情報は以前のバージョンです"
+msgstr "この資格情報は以前のバージョンです。"
 
 #: cred/templates/cred_detail.html:22
 msgid "Click here"
@@ -681,7 +681,7 @@ msgstr "ここをクリック"
 
 #: cred/templates/cred_detail.html:22
 msgid "to see the latest version."
-msgstr "最新バージョンを見る"
+msgstr "して最新バージョンを参照。"
 
 #: cred/templates/cred_detail.html:25
 msgid "Change Required"
@@ -925,7 +925,7 @@ msgstr "監査ログ"
 
 #: cred/templates/credaudit_list.html:7 staff/templates/staff_audit.html:23
 msgid "Action"
-msgstr "アクション"
+msgstr "活動"
 
 #: cred/templates/credaudit_list.html:11 staff/templates/staff_audit.html:31
 msgid "Credential"
@@ -933,7 +933,7 @@ msgstr "資格情報"
 
 #: cred/templates/credaudit_list.html:13 staff/templates/staff_audit.html:33
 msgid "When"
-msgstr "いつ"
+msgstr "日時"
 
 #: cred/templates/credaudit_list.html:29
 msgid "More logs..."
@@ -1073,7 +1073,7 @@ msgstr "プロフィール"
 
 #: ratticweb/templates/sidebar.html:15
 msgid "Add Favourite Tags on the "
-msgstr ""
+msgstr "ここには"
 
 #: ratticweb/templates/sidebar.html:16
 msgid "profile"
@@ -1081,11 +1081,11 @@ msgstr "プロフィール"
 
 #: ratticweb/templates/sidebar.html:16
 msgid "page to see them here."
-msgstr ""
+msgstr "で設定したお気に入りのタグが表示されます"
 
 #: ratticweb/templates/sidebar.html:22
 msgid "If you are a member of any groups, you will see them listed here. "
-msgstr ""
+msgstr "ここにはあなたの所属するグループが表示されます"
 
 #: ratticweb/templates/sidebar.html:31
 msgid "Forgotten password?"
