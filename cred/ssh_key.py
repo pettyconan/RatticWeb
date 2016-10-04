@@ -14,7 +14,12 @@ class SSHKey(object):
 
     @property
     def key_obj(self):
-        return paramiko.RSAKey.from_private_key(StringIO(self.key), password=self.password)
+        # accepts RSA or ECDSA private keys.
+        # DSS keys are ignored for security reason.
+        try:
+            return paramiko.RSAKey.from_private_key(StringIO(self.key), password=self.password)
+        except paramiko.SSHException:
+            return paramiko.ECDSAKey.from_private_key(StringIO(self.key), password=self.password)
 
     def fingerprint(self):
         fingerprint = binascii.hexlify(self.key_obj.get_fingerprint())
