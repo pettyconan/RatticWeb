@@ -14,6 +14,8 @@ class SSHKey(object):
 
     @property
     def key_obj(self):
+        # accepts RSA or ECDSA private keys.
+        # DSS keys are ignored for security reason.
         try:
             return paramiko.RSAKey.from_private_key(StringIO(self.key), password=self.password)
         except paramiko.SSHException:
