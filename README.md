@@ -18,3 +18,15 @@ Support and Known Issues:
 
 Dev Setup: <https://github.com/tildaslash/RatticWeb/wiki/Development>
 
+----
+
+Notes:
+
+Default environment will not work syncdb.  
+run below commands before syncdb and migration for work around.
+
+```
+$ sudo rm -rf /usr/local/lib/python2.7/dist-packages/kombu/transport/django/migrations /usr/local/lib/python2.7/dist-packages/djcelery/migrations
+$ sudo mv /usr/local/lib/python2.7/dist-packages/kombu/transport/django/south_migrations /usr/local/lib/python2.7/dist-packages/kombu/transport/django/migrations
+$ sudo mv /usr/local/lib/python2.7/dist-packages/djcelery/south_migrations /usr/local/lib/python2.7/dist-packages/djcelery/migrations
+```
