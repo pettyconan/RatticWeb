@@ -605,12 +605,12 @@ msgstr "全てのパスワード"
 #: cred/views.py:108
 #, python-format
 msgid "Passwords tagged with %(tagname)s"
-msgstr "タグ &apos;%(tagname)s&apos; のパスワード"
+msgstr "タグ \"%(tagname)s\" のパスワード"
 
 #: cred/views.py:112
 #, python-format
 msgid "Passwords in group %(groupname)s"
-msgstr "グループ &apos;%(groupname)s&apos; のパスワード"
+msgstr "グループ \"%(groupname)s\" のパスワード"
 
 #: cred/views.py:116
 #, python-format
@@ -658,7 +658,7 @@ msgid ""
 "You are about to delete this password. A staff member will be required if "
 "you want to undelete it."
 msgstr ""
-"あなたはこのパスワードを削除しました。他のスタッフが必要であればパスワードを復活させることができます。"
+"このパスワードを「ゴミ箱」に移動します。必要であれば「ゴミ箱」からパスワードを復活させることができます。"
 
 #: cred/templates/cred_detail.html:19
 msgid ""
@@ -850,7 +850,7 @@ msgstr "タグ名"
 
 #: cred/templates/cred_part_newtagmodal.html:12
 msgid "Create Another"
-msgstr "別のものを作成"
+msgstr "作成してさらに新しいタグを追加"
 
 #: cred/templates/cred_part_passgenmodal.html:5
 msgid "Password Generator"
@@ -1117,12 +1117,12 @@ msgstr "指定されたファイルは KeePass のファイルではありませ
 #: staff/templates/staff_audit.html:10
 #, python-format
 msgid "Audit Logs for password &apos;%(cred_title)s&apos;"
-msgstr "パスワード &apos;%(cred_title)s&apos; の監査ログ"
+msgstr "パスワード \"%(cred_title)s\" の監査ログ"
 
 #: staff/templates/staff_audit.html:13
 #, python-format
 msgid "Audit Logs for user &apos;%(username)s&apos;"
-msgstr "ユーザー &apos;%(username)s&apos; の監査ログ"
+msgstr "ユーザー \"%(username)s\" の監査ログ"
 
 #: staff/templates/staff_audit.html:16
 #, python-format
@@ -1132,7 +1132,7 @@ msgstr "過去 %(item)s 日間の監査ログ"
 #: staff/templates/staff_changeadvice.html:6
 #, python-format
 msgid "Changes for user: %(username)s"
-msgstr "ユーザー &apos;%(username)s&apos; による変更"
+msgstr "ユーザー \"%(username)s\" による変更"
 
 #: staff/templates/staff_changeadvice.html:7
 msgid ""
@@ -1145,7 +1145,7 @@ msgid ""
 msgstr ""
 "ユーザーアカウントを無効にしようとしたか、ユーザからグループを削除しようとしています。\n"
 "このユーザは以下のパスワードにはアクセスできなくなります。\n"
-"これらの全てのパスワードを「変更キュー」に追加することを推奨します。\n"
+削除"これらの全てのパスワードを「変更キュー」に追加することを推奨します。\n"
 "変更キューに追加するには「変更キューに追加」ボタンをクリックしてください\n"
 "変更が必要ない場合にはチェックボタンを外してください。"
 
