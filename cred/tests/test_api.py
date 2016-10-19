@@ -51,4 +51,4 @@ class ApiTest(TestCase):
                 fle.write("blah")
             res = self.data.norm.post(self.detail_url, {"ssh_key": open(filename)})
         self.assertEqual(res.status_code, 500)
-        self.assertEqual(res.content, "not a valid RSA private key file")
+        self.assertEqual(res.content, "not a valid RSA or ECDSA private key file")
